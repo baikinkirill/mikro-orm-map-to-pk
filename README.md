@@ -1,0 +1,7 @@
+To start:
+
+```bash
+docker-compose up -d
+npm i
+npm run dev
+```
