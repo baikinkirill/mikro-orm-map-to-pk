@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "lib": ["ES2023"],
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "outDir": "dist",
+        "resolveJsonModule": true,
+    
+        "strict": true,
+        "strictPropertyInitialization": false,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "noFallthroughCasesInSwitch": true,
+    
+        "forceConsistentCasingInFileNames": true,
+        "verbatimModuleSyntax": false,
+    
+        "incremental": true,
+        "emitDecoratorMetadata": false,
+        "experimentalDecorators": true,
+        "downlevelIteration": true,
+        "preserveConstEnums": true,
+        "removeComments": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "useDefineForClassFields": true,
+    
+        "skipLibCheck": true
+    },
+    "include": [
+        "./src/**/*.ts"
+    ],
+    "ts-node": {
+        "esm": true,
+        "transpileOnly": true,
+        "experimentalSpecifierResolution": "node"
+    }
+}
