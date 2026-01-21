@@ -5,9 +5,9 @@ import { Role } from './Role.entity.js';
 @Entity({ tableName: 'user_role' })
 export class UserRole {
   @ManyToOne(() => User, { primary: true, mapToPk: true })
-  user!: User;
+  user!: number;
 
   @ManyToOne(() => Role, { primary: true, mapToPk: true })
-  role!: Role;
+  role!: number;
 }
 

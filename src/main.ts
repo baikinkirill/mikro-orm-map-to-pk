@@ -19,8 +19,6 @@ async function main() {
   const firstRole = await roleRepository.upsert({ name: 'maintainer', description: 'maintainer role' });
   const secondRole = await roleRepository.upsert({ name: 'viewer', description: 'viewer role' });
 
-  await userRepository.populate(user, ['roles']);
-
   user.roles.add(firstRole);
   user.roles.add(secondRole);
   await em.persist(user).flush();
